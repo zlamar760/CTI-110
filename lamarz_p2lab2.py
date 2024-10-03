@@ -5,16 +5,12 @@
 
 #Create a dictionary
 cars_dict={
-    "Camaro": "Camaro",
-    "Prius": "Prius",
-    "modelS": "Model S",
-    "Silverado": "Silverado",
+    "Camaro": 18.21,
+    "Prius": 52.36,
+    "Model S": 110,
+    "Silverado": 26,
 }
-#Define gas values for each key in dictionary
-cars_dict["Camaro"]=18.21
-cars_dict["Prius"]=52.36
-cars_dict["Model S"]=110
-cars_dict["Silverado"]=26
+
 cars=cars_dict.keys()
 print(cars)
 
