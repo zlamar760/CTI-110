@@ -14,31 +14,14 @@ cars_dict={
 cars=cars_dict.keys()
 print(cars)
 
+#Prompt user for vehicle and display its mpg
 select=input("Enter a vehicle to see its mpg: ")
 print(f"The {select} gets {cars_dict[select]} mpg.")
+print()
 
+#Prompt user for amount of miles they will drive
+miles=int(input(f"How many miles will you drive {select}?: "))
 
-#Gives different output based on what the user inputs. First version, disabled
-"""select=input("Enter a vehicle to see its mpg: ")
-if select=="Camaro":
-    print("The",select,"gets",cars_dict["Camaro"],"mpg.")
-    miles=float(input("How many miles will you drive the Camaro?"))
-    mpg=miles/cars_dict["Camaro"]
-    print(float("%.2f"%mpg),"gallon(s) of gas are needed to drive the",select,miles)
-elif select=="Prius":
-    print("The",select,"gets",cars_dict["Prius"],"mpg.")
-    miles=float(input("How many miles will you drive the Prius?"))
-    mpg=miles/cars_dict["Prius"]
-    print(float("%.2f"%mpg),"gallon(s) of gas are needed to drive the",select,miles)
-elif select=="Model S":
-    print("The",select,"gets",cars_dict["Model S"],"mpg.")
-    miles=float(input("How many miles will you drive the Model S?"))
-    mpg=miles/cars_dict["Model S"]
-    print(float("%.2f"%mpg),"gallon(s) of gas are needed to drive the",select,miles)
-elif select=="Silverado":
-    print("The",select,"gets",cars_dict["Silverado"],"mpg.")
-    miles=float(input("How many miles will you drive the Silverado?"))
-    mpg=miles/cars_dict["Silverado"]
-    print(float("%.2f"%mpg),"gallon(s) of gas are needed to drive the",select,miles)
-else:
-    print("Not an option.")"""
+#Calculate amount of gallons needed and display it
+mpg=miles/cars_dict[select]
+print(float("%.2f"%mpg),"gallon(s) of gas are needed to drive the",select,miles)
