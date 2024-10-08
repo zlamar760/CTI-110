@@ -23,14 +23,12 @@ balance=budget-(gas+hotel+food)
 
 #Display information
 print("------------Travel Expenses------------")
-print(f"Location: {location}")
-print(f"Initial Budget: ${budget:.2f}")
-print()
-
-print(f"Fuel: ${gas:.2f}")
-print(f"Accomodation: ${hotel:.2f}")
-print(f"Food: ${food:.2f}")
+print(f"{'Location: ':<20}{location}")
+print(f"{'Initial Budget: ':<20}${budget:,.2f}")
+print(f"{'Fuel: ':<20}${gas:,.2f}")
+print(f"{'Accomodation: ':<20}${hotel:,.2f}")
+print(f"{'Food: ':<20}${food:,.2f}")
 print("---------------------------------------")
 print()
 
-print(f"Remaining Balance: ${balance:.2f}")
+print(f"{'Remaining Balance: ':<20}${balance:,.2f}")
