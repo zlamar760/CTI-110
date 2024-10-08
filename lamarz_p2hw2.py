@@ -15,7 +15,7 @@ print()
 
 #Print results using functions
 print("------------Results------------")
-print(f"Lowest Grade: {min(grades):.1f}")
-print(f"Highest Grade: {max(grades):.1f}")
-print(f"Sum of Grades: {sum(grades):.1f}")
-print(f"Average: {sum(grades)/len(grades):.2f}")
+print(f"{'Lowest Grade: ':<18}{min(grades):.1f}")
+print(f"{'Highest Grade: ':<18}{max(grades):.1f}")
+print(f"{'Sum of Grades: ':<18}{sum(grades):.1f}")
+print(f"{'Average: ':<18}{sum(grades)/len(grades):.2f}")
