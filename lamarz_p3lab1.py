@@ -42,23 +42,28 @@ money=money-(n*5)
 p=money
 
 #Begin statements. If any currency is one print singular word.
-if d==1:
-    print(f"{d} Dollar")
-elif d>0:
-    print(f"{d:,} Dollars")
-if q==1:
-    print(f"{q} Quarter")
-elif q>0:
-    print(f"{q} Quarters")
-if di==1:
-    print(f"{di} Dime")
-elif di>0:
-    print(f"{di} Dimes")
-if n==1:
-    print(f"{n} Nickel")
-elif n>0:
-    print(f"{n} Nickels")
-if p==1:
-    print(f"{p} Penny")
+if d>0:
+    if d==1:
+        print(f"{d} Dollar")
+    else:
+        print(f"{d:,} Dollars")
+if q>0:
+    if q==1:
+        print(f"{q} Quarter")
+    else:
+        print(f"{q} Quarters")
+if di>0:
+    if di==1:
+        print(f"{di} Dime")
+    else:
+        print(f"{di} Dimes")
+if n>0:
+    if n==1:
+        print(f"{n} Nickel")
+    else:
+        print(f"{n} Nickels")
 elif p>0:
-    print(f"{p} Pennies")
+    if p==1:
+        print(f"{p} Penny")
+    else:
+        print(f"{p} Pennies")
