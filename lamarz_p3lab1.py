@@ -41,7 +41,7 @@ money=money-(n*5)
 #Calculate pennies
 p=money
 
-#Begin statements. If any currency is one print singular word.
+#Begin statements. If any currency is one print singular word. Else print plural.
 if d>0:
     if d==1:
         print(f"{d} Dollar")
@@ -62,7 +62,7 @@ if n>0:
         print(f"{n} Nickel")
     else:
         print(f"{n} Nickels")
-elif p>0:
+if p>0:
     if p==1:
         print(f"{p} Penny")
     else:
