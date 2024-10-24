@@ -18,28 +18,43 @@ money=float(input("Enter the amount of money as a float: $"))
 
 #Convert money to whole number
 money=round(money*100)
+
+#If user puts 0.00
 if money==0:
     print("No change")
-#Calculate the amount of dollars in money variable
-d=money//100
 
-#Remove number of dollars from money
-money=money-(d*100)
+#Consider debt
+if money<0:
+    print("OUCH! You're in debt!")
 
-#Calculate quarters
-q=money//25
-money=money-(q*25)
+if money>0:
+    #Calculate the amount of dollars in money variable
+    d=money//100
+    
+    #Remove number of dollars from money
+    money=money-(d*100)
+    
+    #Calculate quarters
+    q=money//25
+    money=money-(q*25)
+    
+    #Calculate dimes
+    di=money//10
+    money=money-(di*10)
+    
+    #Calculate nickels
+    n=money//5
+    money=money-(n*5)
+    
+    #Calculate pennies
+    p=money
 
-#Calculate dimes
-di=money//10
-money=money-(di*10)
-
-#Calculate nickels
-n=money//5
-money=money-(n*5)
-
-#Calculate pennies
-p=money
+else:
+    d=0
+    q=0
+    di=0
+    n=0
+    p=0
 
 #Begin statements. If any currency is one print singular word. Else print plural.
 if d>0:
