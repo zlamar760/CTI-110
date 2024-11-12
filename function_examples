@@ -1,5 +1,17 @@
 def my_animal(name, sound, pound_food):
   print(f"The {name} makes a {sound} noise!")
   print(f"The {name} eats {pound_food} pounds of food a day!")
-  print(f"The {name} eats {pound_food * 7} pounds of food a week!")
+  print(f"The {name} eats {(pound_food * 7):.2f} pounds of food a week!")
+
+def getName():
   
+
+def main():
+  print("The main function is executing!")
+  print()
+  my_animal("Lion", "rawr", 20.5)
+  print()
+  my_animal("Mouse", "ekekekekekekek", 0.2)
+
+if __name__=="__main__":
+  main()
